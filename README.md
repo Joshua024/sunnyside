@@ -3,8 +3,9 @@
 ## Project link
 
 ### Desktop design
-<img src="https://i.ibb.co/9hJS0Ky/mobile-design.jpg" alt="mobile-design" border="0">
+<img src="https://i.ibb.co/zbKXxwz/desktop-design.jpg" alt="desktop-design" border="0">
 
 #### Mobile design
-<img src="https://i.ibb.co/zbKXxwz/desktop-design.jpg" alt="desktop-design" border="0">
+<img src="https://i.ibb.co/9hJS0Ky/mobile-design.jpg" alt="mobile-design" border="0">
+
 
