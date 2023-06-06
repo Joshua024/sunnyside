@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: url(https://fonts.google.com/specimen/Barlow);
+    font-weight: 700;
+}
+header{
+    padding: 0 2rem;  
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom 1% right 50%;
+    background-size: 100% 120%;
+}
+.hero p{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+header .hero img{
+    width: 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li .btn-lg{
+    color: black;
+    background-color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 2rem;
+    transition: .5s;
+}
+nav ul li a{
+    color: white;
+    background-color: transparent;
+    padding: 0.3rem 0.6rem;
+    border-radius: 2rem;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: white;
+    background-color: rgba(10, 80, 50, 0.5);
+    transition: .5s;
+}
+
+header nav h2 a{
+    color: hsl(0, 0%, 100%);
+    font-size: calc(2rem + 1vw);
+}
+nav ul li a{
+    color: hsl(0, 0%, 100%);
+    font-size: calc(1rem + 1vw);
+}
+header .hero{
+    text-align: center;
+    color: white;
+    /* font-size: calc(1rem + 1vw); */
+}
+header nav{
+    padding: 1rem;
+}
+
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.grid_layout{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+
+}
+.grid_item{
+   width: calc(37.5rem + 2.4vw);
+   height: calc(12.5rem + 38vh); 
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.grid_item_text_carrier{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: space-evenly !important;
+    padding: 0 8rem;
+    /* background-color: red; */
+    
+}
+.grid_item_text_carrier h3{
+    font-size: calc(2rem + 1vw);
+    
+}
+.grid_item.grid-5{
+    background: url(./images/desktop/image-graphic-design.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.grid_item.grid-6{
+    background: url(./images/desktop/image-photography.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.grid_item.grid-5 p,
+.grid_item.grid-6 p{
+    text-align: justify;
+    padding: 0 6rem;
+}
+.testimonial{
+    width: 100%;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 4rem 0 5rem 0;
+
+}
+.testimonial_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial_container .col{
+    padding: 0 3rem 0 3rem;
+}
+
+.testimonial img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    align-self: center !important;
+    justify-self: center;
+    margin: 3rem 0;
+}
+.testimonial h2{
+    color: hsl(210, 4%, 67%);
+    padding: 3rem 0 3rem 0;
+}
+.testimonial h4{
+    margin: 3rem 0 0.5rem 0;
+}
+aside{
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+}
+.aside_container .col img{
+    width: 100%;
+    height: 100%;
+}
+.aside_container{
+    display: flex;
+    flex: 1;
+
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: hsl(168, 34%, 41%);
+    padding: 4rem 0;
+}
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly !important; */
+    align-items: center !important;
+    justify-content: center !important;
+}
+footer ul{
+    display: flex;
+    gap: 2rem;
+
+}
+footer ul li{
+    margin: 2rem 0.25rem;
+}
+footer h2 a{
+    color: #2C7265;
+    font-size: calc(2rem + 1vw);
+    font-weight: 900;
+    transition: 1s;
+}
+footer ul li a{
+    color: #2C7265;
+    font-size: calc(1rem + 1vw);
+    transition: 1s;
+}
+footer ul li a:hover,
+footer h2 a:hover{
+    color: white;
+}
+.navbar_menu{
+    display: flex;
+    gap: calc(1rem + 1vw);
+    align-items: center;
+}
+header .bar{
+    display: none;
+}
+header .barmenu{
+    display: none;
+}
+
+
+
+ @media (max-width: 37.5rem){ /* 600px */
+ 
+    header{
+        padding: 0 2rem;  
+        width: 100%;
+        height: 100vh;
+        background-image: url(./images/mobile/image-header.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: bottom 0% right 0%;
+    }
+    header .hero img{
+        width: 18%;
+        margin-top: 2rem;
+    }
+    header nav .navbar_menu{
+        display: none;
+    }
+    /* burger menu styling  */
+     header .bar{
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        display: block;
+        text-align: end;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .mobile-menu-holder{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        width: 90%;
+        height: auto;
+        display: block !important;
+        background-color: transparent;
+        padding: 1rem 0;
+        transition: 2s !important;
+    }
+    .mobile-menu-holder ul{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        padding: 4.5rem 0;
+        border: 2px solid white;
+    }
+    .triangle{
+        border-top: 30px solid transparent;
+        border-right: 30px solid #fff;
+        margin-left: auto;
+        outline: none;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-menu-holder a{
+        color: silver;
+        font-size: 2.2rem;
+        font-weight: 900;
+        padding: 0.5rem 2rem !important;
+        border-radius: 5rem;
+        transition: 1s;
+    }
+    .mobile-menu-holder .btn-lg{
+        color: silver;
+    }
+    .mobile-menu-holder a:hover{
+        color: black !important;
+        background-color: yellow !important;
+       
+        
+    }
+   
+    header nav .logo{
+        font-size: 2rem;
+    }
+    header p{
+        text-align: center;
+        font-size: 1.2rem;  
+        padding-top: 4rem;
+        font-weight: bolder;
+    }
+    
+main{
+    width: 100%;
+    height: auto;
+}
+
+.grid_layout{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+
+}
+.grid_layout .grid_item:nth-of-type(2){
+    order: -1;
+}
+.grid_item .learn1{
+    border-bottom: 5px solid yellow;
+}
+.grid_item .learn2{
+    border-bottom: 5px solid red;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid_item_text_carrier h3{
+    font-size: calc(2rem + 1vw);
+    text-align: center;
+    
+}
+.grid_item_text_carrier p{
+    font-size: calc(0.9rem + 1vw);
+    
+}
+.grid_item_text_carrier{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    padding: 0 4rem;
+}
+
+.grid_item.grid-5{
+    background: url(./images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    color: #2C7265;
+}
+.grid_item.grid-6{
+    background: url(./images/mobile/image-photography.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    color: #2C7265;
+}
+.grid_item.grid-5 p,
+.grid_item.grid-6 p{
+    text-align: justify;
+    padding: 0 2rem;
+}
+.testimonial{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+
+.testimonial_container{
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+ .testimonial_container .col{
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem 0 2rem;
+} 
+ .testimonial_container .col p{
+    text-align: center;
+} 
+
+aside{
+    width: 100%;
+    height: auto;
+}
+.aside_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aside_container .col{
+    width: 50%;
+    height: 25vh;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: hsl(168, 34%, 41%);
+    padding: 4rem 0;
+}
+
+}
+ @media (max-width: 62rem){ /* 992px */
+    
+ 
+}
+ @media (max-width: 87rem){ /* 1392px */
+    
+ 
+}
